@@ -18,11 +18,11 @@ gulp.task('lint:test', () => {
 
 gulp.task('mocha:test', () => {
   gulp.src(testFiles)
-    .pipe(mocha())
+    .pipe(mocha());
 });
 
 gulp.task('watch', () => {
-  gulp.watch('**/**/*.js', ['lint:app', 'lint:test', 'mocha:test'])
-})
+  gulp.watch('**/**/*.js', ['lint:app', 'lint:test', 'mocha:test']);
+});
 
 gulp.task('default', ['lint:app', 'lint:test', 'mocha:test', 'watch']);
