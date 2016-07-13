@@ -1,5 +1,4 @@
 module.exports = {
-
   cowsay: function(greeting) {
     const cow =
       '                   \n' +
